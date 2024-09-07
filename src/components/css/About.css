@@ -1,0 +1,66 @@
+/* 4 About */
+
+.about_wrapper ul.nav-pills {
+  border: 1px solid var(--gray-color);
+  border-radius: 50px;
+}
+
+.about_wrapper ul li .nav-link {
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.45s cubic-bezier(0, 0, 0.2, 1);
+  display: inline-block;
+  color: var(--text-gray);
+  border: 0;
+  transition: 0.3s;
+}
+
+.about_wrapper ul li .nav-link.active {
+  background-color: var(--primary-color);
+}
+
+.about_wrapper .single-progress {
+  margin-top: 26px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about_wrapper .single-progress .progress {
+  height: 4px;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: var(--bg-white);
+  overflow: visible;
+}
+
+.about_wrapper .progress-bar {
+  background-color: var(--primary-color);
+  background-image: var(--gradient-color);
+}
+
+.about_wrapper .single-progress h6 {
+  text-align: left;
+}
+
+.about_wrapper .single-progress .label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--text-gray);
+  font-size: 15px;
+}
+
+.about_wrapper .tab-pane li {
+  color: var(--gray-color);
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  list-style: none;
+}
+
+.about_wrapper .tab-pane li a {
+  font-weight: 500;
+  display: block;
+  color: var(--text-gray);
+}

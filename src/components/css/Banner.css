@@ -1,0 +1,41 @@
+/* 3 Banner */
+.banner_wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 650px;
+  background-image: linear-gradient(rgba(33, 25, 25, 0.45), rgba(0, 0, 0, 0.26)),
+    url("../../assets/images/red.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 200px 0 100px 0;
+}
+.banner_wrapper h1 {
+  background: linear-gradient(
+    to left,
+    #fb3f3f 35%,
+    rgb(143, 56, 250),
+    rgb(75, 252, 252),
+    rgb(243, 66, 207)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+  animation: fire 3s linear infinite;
+  text-transform: uppercase;
+  font-size: 2.9275rem;
+}
+@keyframes fire {
+  0% {
+    background-position: 0% 75%;
+  }
+
+  50% {
+    background-position: 100% 60%;
+  }
+
+  100% {
+    background-position: 0% 75%;
+  }
+}

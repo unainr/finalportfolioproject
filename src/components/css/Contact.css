@@ -1,0 +1,23 @@
+.contact_wrapper .form-control,
+.contact_wrapper textarea {
+  background-color: transparent;
+  border-color: var(--gray-color);
+  color: var(--text-gray);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+.contact_wrapper .form-control:hover,
+.contact_wrapper textarea:hover,
+.contact_wrapper .form-control:focus,
+.contact_wrapper textarea:focus {
+  border-color: var(--primary-color);
+  color: var(--text-white);
+}
+.contact_wrapper .call_details {
+  color: var(--text-gray);
+}
+.contact_wrapper .call_details a {
+  font-weight: 700;
+  color: var(--text-gray);
+}

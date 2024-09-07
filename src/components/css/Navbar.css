@@ -1,0 +1,109 @@
+.header_wrapper .navbar {
+  padding: 15px 0;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.header_wrapper .navbar-brand img {
+  max-width: 120px;
+  height: auto;
+}
+
+.header_wrapper .navbar-toggler {
+  border: 0;
+  color: var(--gray-color)!important;
+  line-height: 2;
+}
+
+.header_wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+  margin: 0 10px;
+}
+
+.header_wrapper .nav-item .nav-link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-gray);
+  display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: 0.3s;
+  bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+  color: var(--text-white);
+}
+.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.721);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(17, 6, 45, 0.05);
+  box-shadow: 0 4px 6px 0 rgba(17, 6, 45, 0.05);
+  -webkit-animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 1s ease-in-out 0s normal none 1 running fadeInDown;
+}
+@keyframes fadeInDown {
+  0% {
+    top: -30%;
+  }
+
+  50% {
+    top: -15%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.darkmode .nav-item .nav-link.active,
+.darkmode .nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.darkmode .nav-item .nav-link {
+  color: rgb(25, 2, 2) !important;
+}
+
+.darkmode .header-scrolled {
+  background-color: rgba(203, 201, 201, 0.963);
+  box-shadow: 0 4px 6px 0 rgba(8, 7, 8, 0.358);
+}
+.darkmode {
+  --primary-color: #fd4766;
+  --secondary-color: #fffffff7;
+  --bg-dark-blue: #dedcdcc9;
+  --bg-white: #fff;
+  --primary-text: #fd4766;
+  --text-gray: #0b0210;
+  --text-white: #130303;
+}
+
+.darkmode .banner_wrapper {
+  background-image: linear-gradient(
+      rgba(33, 25, 25, 0.356),
+      rgba(0, 0, 0, 0.26)
+    ),
+    url("../../assets/images/red1.jpg");
+}

@@ -1,0 +1,198 @@
+/* Main Card Styling */
+.portfolio_wrapper .card {
+  height: 100%;
+  min-height: 350px;
+  overflow: hidden;
+  border: 1px solid var(--bg-white);
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  background-size: 200% 200%;
+  animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.portfolio_wrapper .card:hover {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: brightness(0.7);
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.05); /* Slight zoom for background */
+  filter: brightness(0.5); /* Darker on hover for contrast */
+}
+
+/* Enhanced Overlay Styles */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(1.1); /* Slight scale initially */
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.portfolio-card:hover .card-overlay {
+  opacity: 1;
+  transform: scale(1.1); /* Smooth scale effect on hover */
+}
+
+/* Blurred Background Effect */
+.portfolio-card:hover img {
+  filter: blur(3px) brightness(0.5); /* Adds blur effect */
+}
+
+/* Smooth Fade-in for Content */
+.card-content {
+  text-align: center;
+  color: white;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.portfolio-card:hover .card-content {
+  transform: translateY(0); /* Moves content into place */
+  opacity: 1; /* Fade in smoothly */
+}
+
+/* Enhanced Title */
+.card-title {
+  font-size: 2rem; /* Larger font size for title */
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ff3b4b;
+}
+
+/* Description with Subtle Fade */
+.card-description {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+  opacity: 0.9; /* Subtle fade for description */
+}
+
+/* Button with Ripple Effect */
+.btn-danger {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-effect {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.4s;
+}
+
+.ripple-effect::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  padding-bottom: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.ripple-effect:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.icon {
+  font-size: 2rem;
+  transition: color 0.3s ease;
+  color: #6c757d;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Icon default colors */
+.react-icon {
+  color: #61dbfb; /* React color */
+}
+.react-icon:hover {
+  color: #21a1f1; /* React hover color */
+}
+
+.html-icon {
+  color: #e34f26; /* HTML color */
+}
+.html-icon:hover {
+  color: #ff6600; /* HTML hover color */
+}
+
+.bootstrap-icon {
+  color: #7952b3; /* Bootstrap color */
+}
+.bootstrap-icon:hover {
+  color: #6f42c1; /* Bootstrap hover color */
+}
+
+.tailwind-icon {
+  color: #38b2ac; /* Tailwind CSS color */
+}
+.tailwind-icon:hover {
+  color: #4dc0b5; /* Tailwind CSS hover color */
+}
+
+.nextjs-icon {
+  color: #ffff; /* Next.js color */
+}
+.nextjs-icon:hover {
+  color: #0070f3; /* Next.js hover color */
+}
+.js-icon {
+  color: #f7df1e; /* JavaScript color */
+}
+.typescript-icon {
+  color: #3178c6; /* TypeScript color */
+}
+
+.jquery-icon {
+  color: #0868ac; /* jQuery color */
+}
+.shadcnui-icon {
+  color: #ffff; /* Default color for Shadcn UI icons */
+}
