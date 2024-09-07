@@ -20,7 +20,7 @@ const Banner = () => {
               </h1>
 
               <div className="mt-4">
-                <a className="main-btn" href="images/cvpdf.pdf">
+                <a className="main-btn" href="/cvpdf.pdf">
                   Download CV
                 </a>
               </div>
