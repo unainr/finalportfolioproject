@@ -5,7 +5,9 @@ import {
 	SiNextdotjs,
 	SiTypescript,
 	SiJquery,
-    SiShadcnui
+    SiShadcnui,
+	SiStripe,
+	SiMongodb
 } from "react-icons/si";
 
 const MainCard = ({
@@ -20,7 +22,9 @@ const MainCard = ({
 	htmlicons = false,
 	typescripticons = false,
 	tailwindicons = false,
-    shadcnuicons= false
+    shadcnuicons= false,
+	stripe = false,
+	mongodb = false
 }) => {
 	return (
 		<div className="col-lg-6 col-md-12 mb-4">
@@ -44,6 +48,18 @@ const MainCard = ({
 						<div className="icon-container">
 							{reacticons ? (
 								<FaReact className="icon react-icon" title="React" />
+							) : (
+								""
+							)}
+							{mongodb ? (
+								
+								<SiMongodb className="mongodb icon" title="mongodb" />
+							) : (
+								""
+							)}
+							 {stripe ? (
+								
+								<SiStripe className="icon nextjs-icon" title="stripe" />
 							) : (
 								""
 							)}

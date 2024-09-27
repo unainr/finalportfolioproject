@@ -196,3 +196,6 @@
 .shadcnui-icon {
   color: #ffff; /* Default color for Shadcn UI icons */
 }
+.mongodb {
+  color: green;
+}

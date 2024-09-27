@@ -20,6 +20,8 @@ const Project = () => {
 					<div className="row">
 						<MainCard cardimg1 = "/portfolio/11.png" title= "Fusion Style  " projectlink = {"https://unfusion.netlify.app/"} reacticons = {true} bootstrapicons= {true}/>
 
+						<MainCard cardimg1 = "/portfolio/decor.png" title= "Home Decor  " projectlink = {"https://decorvs.vercel.app/"} nextjsicons = {true} mongodb = {true} stripe = {true} typescripticons= {true} tailwindicons= {true} shadcnuicons= {true}/>
+
 						<MainCard cardimg1 = "/portfolio/sol.png" title= "Sonic Blend" projectlink={"https://sonicblend.vercel.app/"} nextjsicons = {true} bootstrapicons= {true}/>
 						
 						<MainCard cardimg1 = "/portfolio/moive.png" title= "Nexuscinema" projectlink={"https://nexuscinema.vercel.app/"} nextjsicons typescripticons= {true} tailwindicons= {true} shadcnuicons= {true}/>
